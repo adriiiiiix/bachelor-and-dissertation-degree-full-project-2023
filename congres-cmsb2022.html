@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0" name="viewport">
+    <title>Magazin Online</title>
+    <link href='https://live.mediamed.ro/wp-content/themes/molla/assets/vendor/font-awesome/all/css/all.min.css?ver=5.8.6' id='font-awesome-all-css'
+          media='all'
+          rel='stylesheet'/>
+    <link href='https://live.mediamed.ro/wp-content/themes/molla/assets/vendor/molla-fonts/css/font-icons.css?ver=5.8.6' id='molla-font-icon-css'
+          media='all'
+          rel='stylesheet'/>
+    <link href='https://live.mediamed.ro/wp-content/themes/molla/assets/css/frontend/theme.css?ver=1.3.3' id='molla-theme-css'
+          media='all' rel='stylesheet'/>
+    <link href='https://live.mediamed.ro/wp-content/uploads/molla_css/dynamic_style.css?ver=5.8.6' id='molla-dynamic-style-css'
+          media='all' rel='stylesheet'/>
+    <link href='//fonts.googleapis.com/css?family=Poppins%3A300%2C400%2C500%2C600%2C700&#038;ver=5.8.6#038;subset=latin-ext' id='molla-google-fonts-css'
+          media='all'
+          rel='stylesheet'/>
+    <link href='https://live.mediamed.ro/wp-content/themes/molla/style.css?ver=5.8.6' id='molla-style-css'
+          media='all' rel='stylesheet'/>
+    <style id='molla-style-inline-css'>
+        .top-menu a, .header-top .welcome-msg, .header .social-icons {
+            font-size: 17px;
+            font-weight: bold;
+            letter-spacing: -0.01em;
+            padding-left: 10px;
+            padding-right: 10px;
+            color: #045ba7;
+        }
+
+        .header-top .header-dropdown {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .header-col .nav-dropdown > * {
+            margin-left: 20px;
+        }
+
+        .header-top .header-dropdown > li > a {
+            padding-right: 28px;
+        }
+
+        .header-top .header-dropdown > li > a::after {
+            font-size: 12px;
+        }
+
+        .header-top .account-links {
+            margin-right: 10px;
+            font-weight: 300;
+        }
+
+        .header-search .search-wrapper button.btn {
+            flex-basis: auto;
+            padding: 0;
+            font-size: 26px;
+        }
+
+        .header-search .form-control {
+            padding-left: 5px;
+            font-size: 13px;
+            color: #222;
+        }
+
+        .header-search .form-control::placeholder {
+            color: #222;
+            font-weight: 400;
+        }
+
+        .shop-icons .shop-icon .cart-price, .shop-icons .wishlist .custom-label {
+            font-size: 13px;
+            margin-left: 15px;
+            color: #222;
+            font-weight: 400;
+        }
+
+        .clearance-info p, .header-bottom .menu > li > a {
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        .header-bottom .menu > li > a {
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+
+        .header-bottom .menu > li > a::before {
+            bottom: 11px;
+        }
+
+        .header-bottom .menu > li.menu-item > a::after {
+            right: 10px;
+            top: 49%;
+        }
+
+        .header-bottom .menu > li + li {
+            margin-left: 6px;
+        }
+
+        .mobile-menu-toggler {
+            color: #fff;
+            padding-left: 0;
+        }
+
+        @media (max-width: 991px) {
+            .header .social-icons {
+                margin-right: 2rem;
+            }
+
+            .header-main .header-left {
+                flex: none;
+            }
+
+            .header .shop-icon + .shop-icon {
+                margin-left: 2rem;
+            }
+
+            .shop-icons .shop-icon .cart-price, .shop-icons .wishlist .custom-label {
+                margin-left: 5px;
+            }
+        }
+
+        .header-col > * {
+            margin-right: 2.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="page-wrapper">
+    <header class="header">
+        <div class="header-row">
+            <div class='header-top header-has-center'>
+                <div class='container-fluid'>
+                    <div class='inner-wrap'>
+                        <div class='header-col header-center'>
+                            <div class="custom-html antet">
+                            </div>
+                        </div>
+                        <div class='header-col header-right'>
+                            <div class="header-row-wrap">
+                                <div class="social-icons social-icons-colored circle-type social-icons-sm">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-row">
+            <div class='header-main'>
+                <div class='container-fluid'>
+                    <div class='inner-wrap'>
+                        <div class='header-col header-left'>
+                            <div class="header-search header-search-visible header-search-no-radius">
+                                <a class="search-toggle" href="#" role="button"><i class="icon-search"></i></a>
+                                <form action="#" class="searchform" method="get">
+                                    <div class="search-wrapper search-wrapper-wide">
+                                        <input name="post_type" type="hidden" value="all"/>
+                                        <input autocomplete="off" class="form-control" name="s" placeholder="Caută..."
+                                               required="" type="search" value="">
+                                        <button class="btn btn-primary" style="background-color: #12579a;"
+                                                type="submit"><i class="icon-search"></i></button>
+                                    </div>
+                                    <input name='lang' type='hidden' value='ro'/>
+                                </form>
+                            </div>
+                        </div>
+                        <div class='header-col header-right'>
+                            <ul class="nav top-menu sf-arrows">
+                                <li class="top-link">
+                                    <a href="#">Meniu</a>
+                                    <ul class="nav nav-dropdown">
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-375"
+                                            id="menu-item-375">
+                                            <a aria-current="page" href="index.html" style="color: #12579a">Acasă</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30565"
+                                            id="menu-item-30565">
+                                            <a href="login-register.html" style="color: #12579a;">Autentificare</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="shop-icons">
+                                <div class="shop-icon dropdown cart cart-dropdown type-full ">
+                                    <a class="dropdown-toggle" href="#">
+                                        <div class="icon">
+                                            <i class="icon-shopping-cart"></i>
+                                            <span class="cart-count" style="background-color: #12579a;">0</span>
+                                        </div>
+                                        <p class="custom-label">Coș</p>
+                                    </a>
+                                    <span class="cart-price"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-row">
+            <div class='header-bottom'>
+                <div class='container-fluid'>
+                    <div class='inner-wrap'>
+                        <div class='header-col header-left'>
+                            <button class="mobile-menu-toggler">
+                                <i class="icon-bars"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <nav class="woocommerce-breadcrumb divider-active">
+            <div class="breadcrumb-wrap full-divider">
+                <div class="container-fluid">
+                    <div class="breadcrumb inner-wrap"><a href="magazin.html">Prima pagină</a><span
+                            class="breadcrumb-delimiter"><i class="icon-angle-right"></i></span><a
+                            href="evenimente-cmsb.html">Evenimente CMSB</a><span class="breadcrumb-delimiter"><i
+                            class="icon-angle-right"></i></span>CONGRESUL COLEGIULUI MEDICILOR STOMATOLOGI DIN BUCUREȘTI - Ediția 2022
+                        <ul class="product-pager ml-auto">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="page-content ">
+            <div class="content-area" id="primary">
+                <main class="site-main" id="main" role="main">
+                    <div class="container-fluid">
+                        <div class="woocommerce-notices-wrapper"></div>
+                        <div class="gallery-vertical product type-product post-34786 status-publish first instock product_cat-evenimente-boehringer-ingelheim has-post-thumbnail downloadable virtual sold-individually purchasable product-type-webinar"
+                             id="product-347860">
+                            <div class="product-intro  default-product horizontal">
+                                <div class="row">
+                                    <div class="col-md-6">
+
+                                        <div class="woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-4 images product-gallery"
+                                             data-columns="4">
+                                            <div class="row thumb-horizontal">
+                                                <div class="product-labels"></div>
+                                                <div class="owl-carousel owl-simple product-gallery-carousel owl-nav-inside c-xs-1 sp-10"
+                                                     data-toggle="owl">
+                                                    <figure class="woocommerce-product-gallery__wrapper product-main-image">
+                                                        <br><br><br>
+                                                        <div class="woocommerce-product-gallery__image"><a href="#"><img
+                                                                class="wp-post-image" height="4500"
+                                                                src="images/CMSB_2022_Header-site_CMSB-01-1024x408.jpg"
+                                                                width="8000"/></a>
+                                                        </div>
+                                                    </figure>
+
+                                                </div>
+                                                <div class="product-image-gallery" id="product-zoom-gallery">
+                                                    <div class="thumbnails-wrap">
+                                                        <div class="thumbnails-outer owl-carousel owl-simple owl-nav-inside owl-full c-xs-3 c-sm-4 sp-10"
+                                                             data-toggle="owl">
+                                                            <div class="product-thumb"></div>
+                                                        </div>
+                                                        <div class="vertical-nav">
+                                                            <button class="nav-prev" type="button">
+                                                                <i class="icon-angle-up"></i>
+                                                            </button>
+                                                            <button class="nav-next" type="button">
+                                                                <i class="icon-angle-down"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="summary entry-summary">
+                                            <h2 class="product_title entry-title">CONGRESUL COLEGIULUI MEDICILOR
+                                                STOMATOLOGI DIN BUCUREȘTI - Ediția 2022 </h2>
+                                            <div class="woocommerce-product-details__short-description">
+                                                <p>
+                                                    Evenimentul intitulat <b><i>„Viziune, performanţă, perspective în practica stomatologică”</i></b> <b style="color: white;">.</b> își propune să aducă în atenția dumneavoastră cele mai recente descoperiri din domeniul stomatologiei, prezentate de personalități ale cercetării științifice medicale naționale și internaționale. Experiența primei ediții lansează provocarea unor standarde și performanțe adaptate noilor orizonturi profesionale. Astfel, <b>a doua ediție a Congresului CMSB</b>, având ca fundament o abordare multidisciplinară, va reprezenta o oportunitate excelentă de studiu, prin prisma temelor și cercetărilor științifice prezentate, promovând cele mai recente practici, cu scopul continuării misiunii educaționale și îmbunătățirii portofoliului de cunoștințe în domeniul stomatologiei.
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <div class="social-icons">
+                                                    <span class="social-label"></span>
+                                                    <div class="social-icons circle-type social-icons-sm">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                                <div class="tab-content">
+                                    <div aria-labelledby="tab-title-description"
+                                         class="woocommerce-Tabs-panel woocommerce-Tabs-panel--description panel entry-content wc-tab tab-pane active show" data-id="#tab-description" id="tab-description"
+                                         role="tabpanel">
+
+                                        <h2>Detalii eveniment</h2>
+                                        <br>
+                                        <p style="color: black;">
+                                            Cea de-a doua ediție a <b>Congresului Colegiului Medicilor Stomatologi din
+                                            București</b> se va desfăşura în <b>format hibrid</b>, astfel:
+                                        <ul>
+                                            <li>Fizic, la <b>Hotelul Crowne Plaza din Bucureşti</b> <i>(Bd. Poligrafiei
+                                                nr.1)</i></li>
+                                            <li><b>ONLINE</b> pe <a href="https://congrescmsb.ro/" style="color: blue;">https://congrescmsb.ro/</a>
+                                            </li>
+                                        </ul>
+                                        </p>
+                                        <br>
+                                        <center>
+                                                <button style="background-color: #045ba7; border: none; color: white;" onclick="window.location.href='https://congrescmsb.ro/#inscriere';">
+                                                    <b>ÎNSCRIERE CONGRES</b></button>
+                                                <button style="background-color: #045ba7; border: none; color: white;" onclick="window.location.href='./Program-stiintific_13_Congres-CMSB-2022-_3-octombrie.pdf';">
+                                                    <b>PROGRAM ȘTIINȚIFIC</b></button>
+                                            <button style="background-color: #045ba7; border: none; color: white;" onclick="window.location.href='https://congrescmsb.ro/workshopuri/';">
+                                                <b>ÎNSCRIERE WORKSHOP</b></button>
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </main>
+            </div>
+        </div>
+    </div>
+    <footer class="footer divider-active" data-section-tooltip="Footer">
+        <div class="footer-bottom content-divider ">
+            <div class=" container">
+                <div class="inner-wrap">
+                    <div class="footer-left">
+                        <p class="text-center">Toate drepturile sunt rezervate. © 2022 Media Med Publicis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

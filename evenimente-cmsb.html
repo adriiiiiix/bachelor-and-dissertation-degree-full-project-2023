@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0" name="viewport">
+    <title>Magazin Online</title>
+    <link href='https://live.mediamed.ro/wp-content/themes/molla/assets/vendor/font-awesome/all/css/all.min.css?ver=5.8.6' id='font-awesome-all-css'
+          media='all'
+          rel='stylesheet'/>
+    <link href='https://live.mediamed.ro/wp-content/themes/molla/assets/vendor/molla-fonts/css/font-icons.css?ver=5.8.6' id='molla-font-icon-css'
+          media='all'
+          rel='stylesheet'/>
+    <link href='https://live.mediamed.ro/wp-content/themes/molla/assets/css/frontend/theme.css?ver=1.3.3' id='molla-theme-css'
+          media='all' rel='stylesheet'/>
+    <link href='https://live.mediamed.ro/wp-content/uploads/molla_css/dynamic_style.css?ver=5.8.6' id='molla-dynamic-style-css'
+          media='all' rel='stylesheet'/>
+    <link href='//fonts.googleapis.com/css?family=Poppins%3A300%2C400%2C500%2C600%2C700&#038;ver=5.8.6#038;subset=latin-ext' id='molla-google-fonts-css'
+          media='all'
+          rel='stylesheet'/>
+    <link href='https://live.mediamed.ro/wp-content/themes/molla/style.css?ver=5.8.6' id='molla-style-css'
+          media='all' rel='stylesheet'/>
+    <style id='molla-style-inline-css'>
+        .top-menu a, .header-top .welcome-msg, .header .social-icons {
+            font-size: 17px;
+            font-weight: bold;
+            letter-spacing: -0.01em;
+            padding-left: 10px;
+            padding-right: 10px;
+            color: #045ba7;
+        }
+
+        .header-top .header-dropdown {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .header-col .nav-dropdown > * {
+            margin-left: 20px;
+        }
+
+        .header-top .header-dropdown > li > a {
+            padding-right: 28px;
+        }
+
+        .header-top .header-dropdown > li > a::after {
+            font-size: 12px;
+        }
+
+        .header-top .account-links {
+            margin-right: 10px;
+            font-weight: 300;
+        }
+
+        .header-search .search-wrapper button.btn {
+            flex-basis: auto;
+            padding: 0;
+            font-size: 26px;
+        }
+
+        .header-search .form-control {
+            padding-left: 5px;
+            font-size: 13px;
+            color: #222;
+        }
+
+        .header-search .form-control::placeholder {
+            color: #222;
+            font-weight: 400;
+        }
+
+        .shop-icons .shop-icon .cart-price, .shop-icons .wishlist .custom-label {
+            font-size: 13px;
+            margin-left: 15px;
+            color: #222;
+            font-weight: 400;
+        }
+
+        .clearance-info p, .header-bottom .menu > li > a {
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        .header-bottom .menu > li > a {
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+
+        .header-bottom .menu > li > a::before {
+            bottom: 11px;
+        }
+
+        .header-bottom .menu > li.menu-item > a::after {
+            right: 10px;
+            top: 49%;
+        }
+
+        .header-bottom .menu > li + li {
+            margin-left: 6px;
+        }
+
+        .mobile-menu-toggler {
+            color: #fff;
+            padding-left: 0;
+        }
+
+        @media (max-width: 991px) {
+            .header .social-icons {
+                margin-right: 2rem;
+            }
+
+            .header-main .header-left {
+                flex: none;
+            }
+
+            .header .shop-icon + .shop-icon {
+                margin-left: 2rem;
+            }
+
+            .shop-icons .shop-icon .cart-price, .shop-icons .wishlist .custom-label {
+                margin-left: 5px;
+            }
+        }
+
+        .header-col > * {
+            margin-right: 2.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="page-wrapper">
+    <header class="header">
+        <div class="header-row">
+            <div class='header-top header-has-center'>
+                <div class='container-fluid'>
+                    <div class='inner-wrap'>
+                        <div class='header-col header-center'>
+                            <div class="custom-html antet">
+                            </div>
+                        </div>
+                        <div class='header-col header-right'>
+                            <div class="header-row-wrap">
+                                <div class="social-icons social-icons-colored circle-type social-icons-sm">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-row">
+            <div class='header-main'>
+                <div class='container-fluid'>
+                    <div class='inner-wrap'>
+                        <div class='header-col header-left'>
+                            <div class="header-search header-search-visible header-search-no-radius">
+                                <a class="search-toggle" href="#" role="button"><i class="icon-search"></i></a>
+                                <form action="#" class="searchform" method="get">
+                                    <div class="search-wrapper search-wrapper-wide">
+                                        <input name="post_type" type="hidden" value="all"/>
+                                        <input autocomplete="off" class="form-control" name="s" placeholder="Caută..."
+                                               required="" type="search" value="">
+                                        <button class="btn btn-primary" style="background-color: #12579a;"
+                                                type="submit"><i class="icon-search"></i></button>
+                                    </div>
+                                    <input name='lang' type='hidden' value='ro'/>
+                                </form>
+                            </div>
+                        </div>
+                        <div class='header-col header-right'>
+                            <ul class="nav top-menu sf-arrows">
+                                <li class="top-link">
+                                    <a href="#">Meniu</a>
+                                    <ul class="nav nav-dropdown">
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-375"
+                                            id="menu-item-375">
+                                            <a aria-current="page" href="index.html" style="color: #12579a">Acasă</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30565"
+                                            id="menu-item-30565">
+                                            <a href="login-register.html" style="color: #12579a;">Autentificare</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="shop-icons">
+                                <div class="shop-icon dropdown cart cart-dropdown type-full ">
+                                    <a class="dropdown-toggle" href="#">
+                                        <div class="icon">
+                                            <i class="icon-shopping-cart"></i>
+                                            <span class="cart-count" style="background-color: #12579a;">0</span>
+                                        </div>
+                                        <p class="custom-label">Coș</p>
+                                    </a>
+                                    <span class="cart-price"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-row">
+            <div class='header-bottom'>
+                <div class='container-fluid'>
+                    <div class='inner-wrap'>
+                        <div class='header-col header-left'>
+                            <button class="mobile-menu-toggler">
+                                <i class="icon-bars"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <nav class="woocommerce-breadcrumb divider-active">
+            <div class="breadcrumb-wrap full-divider">
+                <div class="container-fluid">
+                    <div class="breadcrumb inner-wrap" style="color: #000000;"><a href="magazin.html"
+                                                                                  style="color: #000000;">Prima
+                        pagină</a><span class="breadcrumb-delimiter"><i class="icon-angle-right"></i></span>Evenimente
+                        CMSB
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="page-content ">
+            <div class="content-area" id="primary">
+                <main class="site-main" id="main" role="main">
+                    <div class="container-fluid toggle-sidebar">
+                        <div class="page-content" style="padding-left: 25px;">
+                            <div class="products products-default-loop columns-3  row c-md-3 c-xs-2 sp-20">
+                                <div class="product-wrap evenimente-amgen">
+                                    <div class="product-default left-mode product type-product post-34002 status-publish first instock product_cat-evenimente-amgen has-post-thumbnail downloadable virtual sold-individually purchasable product-type-webinar">
+                                        <figure class="product-media">
+                                            <a href="congres-cmsb2022.html">
+                                                <div class="product-labels"></div>
+                                                <img class="attachment- size-" height="533"
+                                                     src="images/CMSB_2022_Header-site_CMSB-01-1024x408.jpg"
+                                                     width="800"/></a>
+                                            <div class="product-action">
+                                                <a class="button product_type_webinar add_to_cart_button btn-product btn-cart"
+                                                   data-quantity="1"
+                                                   href="congres-cmsb2022.html"
+                                                   rel="nofollow"><span>CITEȘTE MAI MULT</span></a><span
+                                                    class="gtm4wp_productdata"
+                                                    style="display:none; visibility:hidden;"></span></div>
+                                        </figure>
+                                        <div class="product-body">
+                                            <div class="product-cat"></div>
+                                            <h3 class="woocommerce-loop-product__title product-title"
+                                                style="font-size: 13.5px;">
+                                                CONGRES CMSB 2022</h3>
+                                            <div class="product-content">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </main>
+        </div>
+    </div>
+</div>
+<footer class="footer divider-active" data-section-tooltip="Footer">
+    <div class="footer-bottom content-divider ">
+        <div class=" container">
+            <div class="inner-wrap">
+                <div class="footer-left">
+                    <p class="text-center">Toate drepturile sunt rezervate. © 2022 Media Med Publicis</p>
+                </div>
+            </div>
+</footer>
+</div>
+</body>
+</html>
