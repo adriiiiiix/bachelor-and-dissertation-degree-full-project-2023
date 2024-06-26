@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- Basic -->
+	<head>
+		<style>
+			body {
+				background: url("https://media.istockphoto.com/id/479977238/photo/table-setting-for-an-event-party-or-wedding-reception.jpg?s=170667a&w=0&k=20&c=iNPmbvMI-4jIPgdErdjDrg1BP2zc8deFC6KFtWNX8_s=")
+					no-repeat center center fixed;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+			}
+
+			.card {
+				width: 40%;
+			}
+
+			input[type="text"],
+			select,
+			input[type="password"] {
+				width: 100%;
+				padding: 2.5px;
+				border: 1px solid #ccc;
+				border-radius: 10px;
+				resize: vertical;
+			}
+
+			div {
+				width: 85%;
+			}
+		</style>
+		<meta charset="utf-8" />
+		<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+
+		<!-- Mobile Metas -->
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+
+		<!-- Site Metas -->
+		<title>MEDIA MED PUBLICIS</title>
+		<meta content="" name="keywords" />
+		<meta content="" name="description" />
+		<meta content="" name="author" />
+
+		<!-- Site Icons -->
+		<link href="#" rel="shortcut icon" type="image/x-icon" />
+		<link href="#" rel="apple-touch-icon" />
+
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+		<link
+			href="https://bootswatch.com/4/lumen/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<!-- Pogo Slider CSS -->
+		<link href="css/pogo-slider.min.css" rel="stylesheet" />
+		<!-- Site CSS -->
+		<link href="style.css" rel="stylesheet" />
+		<!-- Responsive CSS -->
+		<link href="css/responsive.css" rel="stylesheet" />
+		<!-- Custom CSS -->
+		<link href="css/custom.css" rel="stylesheet" />
+		<link href="./style.css" rel="stylesheet" />
+
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body data-offset="98" data-spy="scroll" data-target="#navbar-wd" id="home">
+		<!-- LOADER -->
+		<div id="preloader">
+			<div class="loader">
+				<div class="box"></div>
+				<div class="box"></div>
+			</div>
+		</div>
+		<!-- end loader -->
+		<!-- END LOADER -->
+
+		<center>
+			<div class="container mt-5 pt-5">
+				<div class="card mx-auto border-0">
+					<center>
+						<div class="container">
+							<br /><br />
+							<a class="navbar-brand" href="index.html"
+								><img
+									alt="image"
+									height="65px"
+									src="images/logo.png"
+									width="150px"
+							/></a>
+						</div>
+						<div class="card-header border-bottom-0 bg-transparent">
+							<ul
+								class="nav nav-tabs justify-content-center pt-4"
+								id="pills-tab"
+								role="tablist"
+							>
+								<li class="nav-item">
+									<a
+										aria-controls="pills-login"
+										aria-selected="true"
+										class="nav-link active text-primary"
+										data-toggle="pill"
+										href="#pills-login"
+										id="pills-login-tab"
+										role="tab"
+										>Autentificare</a
+									>
+								</li>
+								<li class="nav-item">
+									<a
+										aria-controls="pills-register"
+										aria-selected="false"
+										class="nav-link text-primary"
+										data-toggle="pill"
+										href="#pills-register"
+										id="pills-register-tab"
+										role="tab"
+										>Înregistrare</a
+									>
+								</li>
+							</ul>
+						</div>
+					</center>
+					<div class="card-body pb-4">
+						<div class="tab-content" id="pills-tabContent">
+							<div
+								aria-labelledby="pills-login-tab"
+								class="tab-pane fade show active"
+								id="pills-login"
+								role="tabpanel"
+							>
+								<form action="login.php" method="post">
+									<div class="form-group">
+										<input
+											autofocus
+											class="form-control"
+											name="user"
+											placeholder="Utilizator"
+											required
+											type="text"
+										/>
+									</div>
+									<div class="form-group">
+										<input
+											class="form-control"
+											name="psw"
+											placeholder="Parolă"
+											required
+											type="password"
+										/>
+									</div>
+									<div class="custom-control custom-checkbox">
+										<input
+											checked=""
+											class="custom-control-input"
+											id="customCheck1"
+											type="checkbox"
+										/>
+										<label
+											class="custom-control-label"
+											for="customCheck1"
+											>Ține-mă minte</label
+										>
+									</div>
+									<div class="text-center pt-4">
+										<button
+											class="btn btn-primary"
+											style="
+												background-color: #045ba7;
+												border: none;
+											"
+											type="submit"
+										>
+											Autentifică-te
+										</button>
+									</div>
+									<div class="text-center pt-3">
+										<a
+											class="btn btn-link text-primary"
+											href="resetare-parola.html"
+											>Ți-ai uitat parola?</a
+										>
+									</div>
+								</form>
+							</div>
+							<div
+								aria-labelledby="pills-register-tab"
+								class="tab-pane fade"
+								id="pills-register"
+								role="tabpanel"
+							>
+								<form action="inregistrare.php" method="post">
+									<div class="form-group">
+										<input
+											class="form-control"
+											name="firstname"
+											placeholder="Nume"
+											required
+											type="text"
+										/>
+									</div>
+									<div class="form-group">
+										<input
+											class="form-control"
+											name="lastname"
+											placeholder="Prenume"
+											required
+											type="text"
+										/>
+									</div>
+									<div class="form-group">
+										<input
+											autofocus
+											class="form-control"
+											name="user"
+											placeholder="Utilizator"
+											required
+											type="text"
+										/>
+									</div>
+									<div class="form-group">
+										<input
+											class="form-control"
+											name="email"
+											placeholder="E-mail"
+											required
+											type="text"
+										/>
+									</div>
+									<div class="form-group">
+										<input
+											class="form-control"
+											name="psw"
+											placeholder="Parolă"
+											required
+											type="password"
+										/>
+									</div>
+									<div class="text-center pt-2 pb-1">
+										<button
+											class="btn btn-primary"
+											style="
+												background-color: #045ba7;
+												border: none;
+											"
+											type="submit"
+										>
+											Înregistrează-te
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</center>
+		<br /><br /><br /><br /><br /><br /><br /><br /><br />
+		<!-- Start Footer -->
+		<footer class="footer-box">
+			<center>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<p class="footer-company-name">
+								Toate drepturile sunt rezervate. &copy; 2022
+								Media Med Publicis
+							</p>
+						</div>
+					</div>
+				</div>
+			</center>
+		</footer>
+		<!-- End Footer -->
+
+		<a class="hvr-radial-out" href="#" id="scroll-to-top"
+			><i class="fa fa-angle-up"></i
+		></a>
+
+		<!-- ALL JS FILES -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<!-- ALL PLUGINS -->
+		<script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	</body>
+</html>

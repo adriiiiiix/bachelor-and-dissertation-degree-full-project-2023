@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ro">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Publicare Anunțuri</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+		/>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				background-color: #f8f8f8;
+				margin: 0;
+				display: flex;
+			}
+			header {
+				background: linear-gradient(45deg, #000000, #0f5da1);
+				color: white;
+				padding: 10px 20px;
+				text-align: center;
+				width: 100%;
+			}
+			.sidebar {
+				width: 200px;
+				background: linear-gradient(45deg, #000000, #0f5da1);
+				color: white;
+				height: 100vh;
+				padding: 15px;
+				box-sizing: border-box;
+				position: fixed;
+			}
+			.sidebar a {
+				color: white;
+				text-decoration: none;
+				display: flex;
+				align-items: center;
+				padding: 10px;
+				margin: 5px 0;
+				border-radius: 4px;
+				transition: background-color 0.3s;
+			}
+			.sidebar a:hover {
+				background-color: rgb(39, 89, 164);
+			}
+			.sidebar a i {
+				margin-right: 10px;
+			}
+			.container {
+				margin-left: 220px; /* Adăugăm un margin-left pentru a lăsa loc pentru sidebar */
+				max-width: calc(100% - 220px);
+				background-color: white;
+				padding: 20px;
+				border-radius: 8px;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+				box-sizing: border-box;
+			}
+			.search-bar,
+			.post-ad {
+				margin-bottom: 20px;
+			}
+			.search-bar input,
+			.search-bar select,
+			.post-ad input,
+			.post-ad textarea,
+			.modal-content input,
+			.modal-content textarea {
+				padding: 10px;
+				margin: 5px 0;
+				width: calc(100% - 22px);
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				box-sizing: border-box;
+			}
+			.search-bar select {
+				padding: 8px;
+				width: 150px;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				background-color: white;
+				appearance: none;
+				background-image: url('data:image/svg+xml;utf8,<svg fill="%23000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+				background-repeat: no-repeat;
+				background-position: right 8px top 50%;
+				background-size: 16px auto;
+				cursor: pointer;
+			}
+			.search-bar button,
+			.post-ad button,
+			.modal-content button {
+				padding: 10px;
+				background: #0f5da1;
+				color: white;
+				border: none;
+				border-radius: 4px;
+				cursor: pointer;
+			}
+			.search-bar button:hover,
+			.post-ad button:hover,
+			.modal-content button:hover {
+				background: linear-gradient(45deg, #000000, #0f5da1);
+			}
+			.ads-list {
+				margin-top: 20px;
+			}
+			.ad-item {
+				display: flex;
+				padding: 10px;
+				margin-bottom: 10px;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				background-color: #fff;
+			}
+			.ad-item img {
+				max-width: 500px;
+				height: auto;
+				margin-left: 10px;
+				border-radius: 4px;
+			}
+			.ad-item-content {
+				flex: 1;
+				margin-left: 10px;
+			}
+			.banner {
+				color: black;
+				padding: 20px;
+				text-align: center;
+				border-radius: 8px;
+				margin-bottom: 20px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+			}
+			.banner img {
+				max-width: 100%;
+				height: auto;
+				margin-bottom: 10px;
+				border-radius: 8px;
+			}
+			.details-button {
+				padding: 10px;
+				background: #0f5da1;
+				color: white;
+				border: none;
+				border-radius: 4px;
+				cursor: pointer;
+				transition: background-color 0.3s;
+			}
+			.details-button:hover {
+				background: linear-gradient(45deg, #000000, #0f5da1);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="sidebar">
+			<h2>Meniu</h2>
+			<a href="index.html"><i class="fas fa-home"></i>Acasă</a>
+			<a href="login-register.html"
+				><i class="fas fa-user"></i>Autentificare</a
+			>
+		</div>
+
+		<div class="container">
+			<!-- Banner cu imagine -->
+			<div class="banner">
+				<img src="images/banner livemediamed.jpg" alt="Banner Image" />
+				<h2>Media Med Publicis | More than events.</h2>
+			</div>
+
+			<div class="search-bar">
+				<h2>Căutare eveniment</h2>
+				<input
+					type="text"
+					id="search-keyword"
+					placeholder="Cuvinte cheie..."
+					style="width: 150px"
+				/>
+				<select id="category-filter-select" style="width: 150px">
+					<option value="">Toate categoriile</option>
+					<option value="Cadouri personalizate">
+						Cadouri personalizate
+					</option>
+					<option value="Evenimente Amgen">Evenimente Amgen</option>
+					<option value="Evenimente Bayer">Evenimente Bayer</option>
+					<option value="Evenimente Boehringer Ingelheim">
+						Evenimente Boehringer Ingelheim
+					</option>
+					<option value="Evenimente SRG">Evenimente SRG</option>
+					<option value="Evenimente CMSB">Evenimente CMSB</option>
+					<option value="Evenimente SNRIR">Evenimente SNRIR</option>
+				</select>
+				<button onclick="searchAds()">Căutare</button>
+			</div>
+
+			<div class="ads-list" id="ads-list">
+				<!-- Lista de anunțuri va apărea aici -->
+			</div>
+		</div>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+				fetchAds(); // Afiseaza initial toate evenimentele la incarcarea paginii
+				const categoryFilterSelect = document.getElementById(
+					"category-filter-select"
+				);
+
+				// Asculta schimbarile in dropdown-ul de filtrare pe categorie
+				categoryFilterSelect.addEventListener("change", () => {
+					searchAds(); // Declanseaza cautarea cand se schimba categoria
+				});
+			});
+
+			function fetchAds() {
+				fetch("view.php?action=fetch")
+					.then((response) => {
+						if (!response.ok) {
+							throw new Error("Network response was not ok");
+						}
+						return response.json();
+					})
+					.then((data) => {
+						displayAds(data); // Afiseaza toate evenimentele initial
+					})
+					.catch((error) => {
+						console.error(
+							"Eroare la aducerea evenimentelor:",
+							error
+						);
+					});
+			}
+
+			function searchAds() {
+				const keyword = document
+					.getElementById("search-keyword")
+					.value.toLowerCase();
+				const category = document
+					.getElementById("category-filter-select")
+					.value.toLowerCase();
+
+				fetch("view.php?action=fetch")
+					.then((response) => {
+						if (!response.ok) {
+							throw new Error("Network response was not ok");
+						}
+						return response.json();
+					})
+					.then((data) => {
+						const filteredAds = data.filter((ad) => {
+							const matchesKeyword =
+								ad.Titlu.toLowerCase().includes(keyword) ||
+								ad.Descriere.toLowerCase().includes(keyword);
+							const matchesCategory = category
+								? ad.Categorie.toLowerCase() === category
+								: true;
+							return matchesKeyword && matchesCategory;
+						});
+						displayAds(filteredAds); // Afiseaza evenimentele filtrate
+					})
+					.catch((error) => {
+						console.error(
+							"Eroare la aducerea sau parsarea datelor:",
+							error
+						);
+					});
+			}
+
+			function displayAds(adsToDisplay) {
+				const adsList = document.getElementById("ads-list");
+				adsList.innerHTML = "";
+
+				adsToDisplay.forEach((ad) => {
+					const adItem = document.createElement("div");
+					adItem.classList.add("ad-item");
+					adItem.innerHTML = `
+            <div class="ad-item-image">
+                <img src="${ad.Imagine}" alt="${ad.Titlu}">
+            </div>
+            <div class="ad-item-content">
+                <h3>${ad.Titlu}</h3>
+                <p><strong>Categorie:</strong> ${ad.Categorie}</p>
+                <p>${ad.Descriere}</p>
+                <button class="details-button" onclick="redirectToEvent('${ad.Link}')">Detalii</button>
+            </div>
+        `;
+					adsList.appendChild(adItem);
+				});
+			}
+
+			function redirectToEvent(link) {
+				window.location.href = link; // Redirecteaza catre pagina de detalii eveniment
+			}
+		</script>
+	</body>
+</html>
