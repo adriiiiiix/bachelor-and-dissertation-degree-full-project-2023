@@ -1,5 +1,6 @@
 <?php
 session_start();
+$con = mysqli_connect("localhost", "root", "root", "BeSocial");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -157,8 +158,6 @@ session_start();
                               <thead align='left'>
                                                   <tr>
                                                       <th>ID</th>
-                                                      <th>Nume</th>
-                                                      <th>Prenume</th>
                                                       <th>Denumire</th>
                                                       <th>Data</th>
                                                       <th>Detalii</th>
@@ -170,9 +169,6 @@ session_start();
 
                                             while ($z = mysqli_fetch_assoc($x)) {
                                                 echo "<tr>
-                                      <td>" . $z['ID'] . "</td>
-                                      <td>" . $z['Nume'] . "</td>
-                                      <td>" . $z['Prenume'] . "</td>
                                       <td>" . $z['Denumire'] . "</td>
                                       <td>" . $z['Data'] . "</td>
                                       <td>" . $z['Detalii'] . "</td>
