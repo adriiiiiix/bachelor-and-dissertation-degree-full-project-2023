@@ -169,6 +169,7 @@ $con = mysqli_connect("localhost", "root", "root", "BeSocial");
 
                                             while ($z = mysqli_fetch_assoc($x)) {
                                                 echo "<tr>
+                                        <td>" . $z['ID'] . "</td>
                                       <td>" . $z['Denumire'] . "</td>
                                       <td>" . $z['Data'] . "</td>
                                       <td>" . $z['Detalii'] . "</td>
